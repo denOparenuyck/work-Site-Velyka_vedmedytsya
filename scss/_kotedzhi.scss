@@ -1,0 +1,66 @@
+/*==================HEADER=================*/
+.header-kotedzhi{
+    background-image: url(../images/kotedzhi-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+}
+/*==================HEADER=================*/
+
+/*==================about-services--style=================*/
+.about-services--style{
+    background-color: $black;
+    padding-bottom: 70px;
+    .title{
+        color: #fff;
+        line-height: 61px;
+    }
+    .about-services__content{
+        color: rgba(#fff, 0.7);
+    }
+    .about-services__content-list-item{
+        &::before{
+            background-color: rgba(#fff, 0.7);
+        }
+    }
+}
+/*==================/about-services--style=================*/
+
+/*==================advantages-kotedzhi=================*/
+.advantages-kotedzhi--text{
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+    width: 375px;
+}
+/*==================/advantages-kotedzhi=================*/
+
+
+/*==================reserve--kotedzhi=================*/
+.reserve--kotedzhi{
+    background-image: url(../images/kotedzhi-reserv-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    .title{
+        width: 490px;
+    }
+}
+/*==================/reserve--kotedzhi=================*/
+
+
+/*==================other-options--kotedzhi=================*/
+.other-options--kotedzhi{
+    .other-options__gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/*==================/other-options--kotedzhi=================*/
+
+
+
+

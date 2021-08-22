@@ -1,0 +1,49 @@
+/*==================HEADER=================*/
+.header-bukovel{
+    background: url(../images/bukovel-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 517px;
+}
+/*==================/HEADER=================*/
+
+/*==================about-services--bukovel=================*/
+.about-services--bukovel{
+    background-color: $black;
+    .title{
+        color: #fff;
+    }
+    .about-services__gallery{
+        margin-top: -90px;
+    }
+    .about-services__content{
+        margin-top: 30px;
+        color: rgba(#fff, 0.8);
+    }
+}
+/*==================about-services--bukovel=================*/
+
+/*==================about--bukovel=================*/
+.about--bukovel{
+    background-color: $black;
+    .title{
+        color: #fff;
+    } 
+    .about-services__content{
+        color: rgba(#fff, 0.8);
+    }
+}
+/*==================/about--bukovel=================*/
+
+/*==================reserve--bukovel=================*/
+.reserve--bukovel{
+    background-image: url(../images/bukovel-reserv-bg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 184px 0 92px;
+}
+/*==================/reserve--bukovel=================*/
+

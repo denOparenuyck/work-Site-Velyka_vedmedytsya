@@ -1,0 +1,80 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    list-style: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    font-weight: normal;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1112px;
+    margin: 0 auto;
+    position: relative;
+}
+.title{
+    font-family: Lora;
+    font-weight: normal;
+    font-size: 48px;
+    color: $black;
+}
+.subtitle{
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $orange;
+    padding-left: 89px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 84px;
+        height: 1px;
+        background-color: $orange;
+        left: 0;
+        top: 50%;
+        transform:translateY(-50%);
+    }
+}
+
+.btn{
+    width: 350px;
+    height: 50px;
+    background-color: $orange;
+    padding: 14px 90px 14px 69px;
+    margin-top: 50px;
+    border: none;
+    span{
+        font-weight: normal;
+        font-size: 18px;
+        color: #FFFFFF;
+        position: relative;
+        padding-right: 45px;
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url(../images/white-arrow-right.png);
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 20px;
+            top: 6px;
+            right: 0;
+        }
+    }
+}

@@ -1,0 +1,353 @@
+/*==================HEADER=================*/
+.header-yaremche{
+    background: linear-gradient(rgba(#000, 0.45)),url(../images/yaremche-bg.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 576px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background: url(../images/yaremche-bg-2.jpg);
+        width: 100%;
+        height: 50%;
+        background-size: cover;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+/*==================/HEADER=================*/
+
+/*==================discount=================*/
+.discount{
+    background-color: $black;
+    .title{
+        position: relative;
+        max-width: 550px;
+        font-family: Lora;
+        font-weight: normal;
+        font-size: 48px;
+        color: #FFFFFF;
+        margin: -40px 86px 35px 0;
+        z-index: 5;
+        span{
+            color: $orange;
+        }
+    }
+}
+.discount__wrapper{
+    display: flex;
+}
+
+.discount-content__text{
+    max-width: 551px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFFFFF;
+    span{
+        color: $orange;
+    }
+}
+.discount-form{
+    margin-top: -170px;
+}
+.form{
+    position: relative;
+    width: 410px;
+    height: 397px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 29px 30px 37px;
+    z-index: 10;
+}
+.form__input+.form__input{
+    margin-top: 34px;
+}
+.form__input{
+    display: block;
+    width: 350px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    padding: 0px 10px 17px 22px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    outline: none;
+    &::placeholder{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+}
+// .form__input:nth-child(2){
+//     padding: 0px 5px 17px 42px;
+//     background-image: url(../images/flag.svg);
+//     background-repeat: no-repeat;
+//     background-position: left -2px;
+// }
+// .form__input:nth-child(3),.form__input:nth-child(4){
+//     padding: 0px 5px 17px 0px;
+//     background-image: url(../images/data-icon.svg);
+//     background-repeat: no-repeat;
+//     background-position: 320px 0px;
+// }
+
+
+.btn{
+    width: 350px;
+    height: 50px;
+    background-color: $orange;
+    padding: 14px 90px 14px 69px;
+    margin-top: 50px;
+    border: none;
+    span{
+        font-weight: normal;
+        font-size: 18px;
+        color: #FFFFFF;
+        position: relative;
+        padding-right: 45px;
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url(../images/white-arrow-right.png);
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 20px;
+            top: 6px;
+            right: 0;
+        }
+    }
+}
+/*==================discount=================*/
+
+/*==================about-hotel=================*/
+.about-hotel{
+    background-color: $black;
+    padding-top: 70px;
+    .about-services__inner{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .title,.about-services__content-list-item{
+        color: #fff;
+        &::before{
+            background-color: #fff;
+        }
+    }
+    .about-services__content-text{
+      
+        margin-right: 47px;
+    }  
+    .about-hotel--subtext,.about-services__content-list-item,.about-services__content-text{
+        color: rgba(#fff,0.5);
+    }
+
+}
+/*==================/about-hotel=================*/
+
+/*==================ADVANTAGES=================*/
+.advantages{
+    background-color: white;
+    .hotel-content{
+        height: 120px;
+        img{
+            position: absolute;
+            top: -200px;
+        }
+    }
+    .hotel-content__title{
+        margin-bottom: 20px;
+        font-family: Lora;
+        font-weight: normal;
+        font-size: 24px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+    .hotel-content__text{
+        font-family: Montserrat;
+        font-weight: 300;
+        font-size: 18px;
+        text-transform: lowercase;
+        color: #FFFFFF;
+        width: 289.8px;
+        padding-bottom: 20px;
+    }
+}
+/*==================/ADVANTAGES=================*/
+
+/*==================SPA=================*/
+.spa{
+    background-image: url(../images/spa-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 187px 0 79px;
+    .title{
+        color: white;
+        width: 374px;
+        margin-bottom: 34px;
+    }
+    .about-services__content-text{
+        color: rgba(white,0.7);
+        width: 445px;
+        margin-bottom: 45px;
+    }
+}
+/*==================/SPA=================*/
+
+/*==================CHOICE=================*/
+.choice{
+    background-color: white;
+    padding: 63px 0 75px;
+    .title{
+        text-align: center;
+        margin-bottom: 59px;
+    }
+    .btn{
+        display: block;
+        background-color: $black;
+        width: 254px;
+        padding: 17px 41px 14px 40px;
+        margin: 0 auto;
+    }
+}
+.choice-hotel{
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: '1fr 1fr 1fr'
+                   '1fr 1fr 1fr';
+    grid-gap: 30px;
+    margin-bottom: 64px;
+}
+.choice-item--1{
+    grid-column: span 1;
+}
+.choice-item--2{
+    grid-column: span 2;
+}
+.choice-item--3{
+    grid-column: span 2;
+}
+.choice-item--4{
+    grid-column: span 1;
+}
+.choice-hotel__item{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background: linear-gradient(359.89deg, rgba(0, 0, 0, 0.7) -0.1%, rgba(23, 27, 24, 0) 99.71%);
+        width: 100%;
+        max-height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .choice-hotel__item-img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.choice-link{
+    position: absolute;
+    z-index: 20;
+    left: 28px;
+    bottom: 23px;
+    font-family: Lora;
+    font-weight: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-right: 45px;
+    &::after{
+        position: absolute;
+        content: "";
+        background-image: url(../images/white-arrow-right.png);
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 20px;
+        top: 13px;
+        right: 0px;
+    }
+}
+/*==================/CHOICE=================*/
+
+/*==================reserve=================*/
+.reserve{
+    background-image: url(../images/reserv-bg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 184px 0 92px;
+    .title{
+        color: #fff;
+        width: 701px;
+        margin-bottom: 40px;
+    }
+    .form{
+        margin: 0px 5px 0px 5px;
+        background-color: transparent;
+        padding: 0;
+    }
+    .btn{
+        width: 254px;
+        padding-left: 40px;
+    }
+}
+/*==================/reserve=================*/
+
+/*==================other-options=================*/
+.other-options{
+    background-color: $black;
+    padding: 40px 0 56px;
+    .title{
+        color: #fff;
+        text-align: center;
+        margin-bottom: 62px;
+    }
+}
+.other-options__gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:30px;
+    margin: 5px;
+    .gallery-item__img{
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+.gallery-item__title{
+    font-weight: normal;
+    font-size: 18px;
+    color: $orange;
+    position: absolute;
+    z-index: 10;
+    bottom: 54px;
+    left: 29px;
+}
+.other-options__gallery-item{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background: linear-gradient(359.89deg, rgba(0, 0, 0, 0.85) -0.1%, rgba(23, 27, 24, 0) 99.71%);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+/*==================/other-options=================*/

@@ -1,0 +1,57 @@
+/*==================HEADER=================*/
+.header-chalet{
+    background-image: url(../images/chalet-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+}
+/*==================/HEADER=================*/
+
+
+
+/*==================about-services--style=================*/
+.about-services--style{
+    .about-services__content{
+        margin-top: 40px;
+        width: 80%;
+    }
+}
+/*==================/about-services--style=================*/
+
+/*==================choice--chalet=================*/
+.other-options--chalet{
+    background-color: white;
+    .title{
+        color: $black;
+    }
+    .other-options__gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 50px;
+    }
+    .other-options__gallery-item::before {
+        height: 318px;
+    }
+    .btn{
+        display: block;
+        background-color: $black;
+        width: 254px;
+        padding: 17px 41px 14px 40px;
+        margin: 0 auto;
+    }
+}
+/*==================/choice--chalet=================*/
+
+/*==================reserve--chalet=================*/
+.reserve--chalet{
+    background-image: url(../images/chalet-reserv-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    .title{
+        width: 534px;
+    }
+}
+/*==================/reserve--chalet=================*/
+
